@@ -1,10 +1,10 @@
-package Primitive_data_types_practice;
+package com.dezxxx.javacore.chapter02;
 
 public class example2 {
     public static void main(String[] args) {
         int num;  // в этой строке кода обявляется переменная num
         //  In this line of code the variables num is declared
-num = 200; // В этой строке кода присваеваться значение переменной
+num = 100; // В этой строке кода присваеваться значение переменной
         //  In this line of code assigning value variable
 System.out.println("This variable - это переменная num:" + num );
  num = num * 2;

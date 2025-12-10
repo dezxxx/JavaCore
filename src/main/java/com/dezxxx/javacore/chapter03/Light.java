@@ -1,6 +1,8 @@
-package Primitive_data_types_practice;
+package com.dezxxx.javacore.chapter03;
+// Вычислить расстояние , проходимое светом,
+        //используя переменные типа lonq.
 
-public class Light_Speed {
+public class Light {
     public static void main(String[] args) {
         int light_speed;
         long days;
@@ -18,12 +20,11 @@ Area.main(args);
 Area1.main(args);
 Area2.main(args);
 Area3.main(args);
-Area4.main(args);
-Area5.main(args);
+
     }
 
 }
-
+//Вычислить площадь круга
 class Area {
     public static void main(String[] args) {
         double pi, r, a;
@@ -35,6 +36,9 @@ class Area {
     }
 }
 
+
+//Продемонстрировать применение типа данных char
+
 class Area1 {
     public static void main(String[] args) {
         char ch1, ch2;
@@ -44,6 +48,10 @@ class Area1 {
         System.out.println( ch1 + " " + ch2 + " Вывод значений примитивный тип char ");
     }
 }
+
+
+//Символьные переменные ведут себя как целочисленные значения.
+
 class Area2 {
     public static void main(String[] args) {
         char ch1, ch2;
@@ -54,6 +62,7 @@ class Area2 {
     }
 }
 
+//Продемонстрировать применение значений типа boolean.
 class Area3 {
     public static void main(String[] args) {
         boolean b;
@@ -67,29 +76,12 @@ class Area3 {
         b = false;
         if (b)
             System.out.println(" Этот код не выполняется ");
-        // Результат сравнения - значения типа Boolean
+        // Результат сравнения - значения типа boolean
         System.out.println(" 10 < 9 равно " + (10 < 9 ));
     }
 }
 
-class Area4 {
-    public static void main(String[] args) {
-        System.out.println(" 10 < 9 равно " + (10 < 9 ));
-    }
-}
 
-class Area5 {
-    public static void main(String[] args) {
-        double x, y, c;
-        {
-            x = 3.4;
-            y = 3.6;
-            // Динамическая инициализация переменной
-            c = Math.sqrt(x * x + y * y);
-            System.out.println(" Гипотенуза равна " + c);
-            x = 20.0;
-        }
 
-    }
-}
+
 

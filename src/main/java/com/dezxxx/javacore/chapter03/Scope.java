@@ -1,6 +1,7 @@
-package Rules_practice;
+package com.dezxxx.javacore.chapter03;
+//Продемонстрировать область действия блока кода.
 
-public class Rules {
+public class Scope {
     public static void main(String[] args) {
         int u; // эта переменная доступна всему коду из метода main()
         u = 10;
@@ -17,28 +18,45 @@ public class Rules {
         //переменная u доступна и эдесь
         System.out.println ( " u равно " + u) ;
 
-        Life_Time.main(args);
+
     }
 
 }
-
 // Этот фрагмент кода написан не верно !
 // couпt = 1 0 0 ;
         // Переменную count нельзя использовать до ее объявления !
 // int count ;
 
-class Life_Time {
+
+// Продемонстрировать срок действия переменной.
+
+class LifeTime {
     public static void main(String[] args) {
         int x;
-        for (x = 0; x <= 10; x++) {
+        for (x = 0; x < 3; x++) {
             int y = -1; // Переменная y инициируется при каждом вхождении в блок кода.
-            System.out.println("x = "+ x + " y = " + y);
+            System.out.println("y ровно " + y); // здесь всегда
+                                                // выводится значение -1
             y = 100;
             System.out.println(+ y);
         }
     }
 }
 
+// Скомпилировать эту программу нельзя
+
+/* class ScopeErr {
+    public static void main(String[] args) {
+        int bar = 1;  // переменная bar создана
+
+        int bar = 2;  // ❌ Ошибка компиляции!
+        // причина: переменная bar уже определена в этой области действия (main)
+    }
+}
+*/
+
+
+// Продемонстрировать приведение типов.
 
 class Conversion {
     public static void main(String[] args) {
