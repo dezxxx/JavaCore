@@ -1,7 +1,5 @@
 package com.dezxxx.javacore.Game;
 
-import java.util.Random;
-
 public interface GameRules {
     default  void printRules() {
         System.out.println("Welcome to game Rock, Paper, Scissors! ");
